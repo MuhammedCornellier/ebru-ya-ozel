@@ -8,6 +8,8 @@ export default defineConfig(({ mode }) => {
     // GitHub Pages base (owner/repo => '/repo/')
     base: '/ebru-ya-ozel/',
     plugins: [react()],
+    // Copy all files from `mami/` into the build output root
+    publicDir: 'mami',
     build: {
       outDir: 'docs'
     },
